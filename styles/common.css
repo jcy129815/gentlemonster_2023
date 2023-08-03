@@ -1,0 +1,88 @@
+/*common.css 모든 웹페이지 공통 css == common*/
+/*common.css == header, footer 공통영역 design*/
+/* Firefox */
+html {scrollbar-width: 10px;;scrollbar-color: #222 #f1f1f1;}
+/* Opera */
+html::-o-scrollbar {width: 10px;}/*스크롤바 크기*/
+html::-o-scrollbar-thumb {background-color: #222;border-radius: 5px;}/*스크롤 드래그바*/
+html::-o-scrollbar-thumb:hover {background-color: #555;}
+/* Chrome, Safari, Edge 등 웹킷 기반 브라우저 */
+::-webkit-scrollbar {width: 10px;}/*스크롤바 크기*/
+::-webkit-scrollbar-track {box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);}/*스크롤바 배경*/
+::-webkit-scrollbar-thumb {background-color: #222;border-radius: 5px;}/*스크롤 드래그바*/
+::-webkit-scrollbar-thumb:hover {background-color: #555;}
+
+header {
+    background: lightblue; margin: 0 auto; height: 100px;
+    width: calc(100% - 60px);
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between; align-items: center;
+}
+header h1 {width: 213px;}
+header h1 a {height: 40px; padding-top: 5px;}
+header h1 a img {width: 100%;}
+header .right {
+    display: flex; align-items: center
+}
+header .right .lang {}
+header .right > * {margin-left: 30px;}
+header .right #searchFrm {margin-left: 30px;}
+header .right #searchFrm fieldset {
+    background: lightgreen;
+    display: flex; flex-flow: row nowrap; align-items: center;
+    border: 1px solid black; border-radius: 100px; padding: 5px 10px;
+}
+header .right #searchFrm fieldset #search_text {background: none; } 
+/* header .right #searchFrm fieldset #search_text::placeholder {color: white;} */
+header .right #searchFrm fieldset #searchBtn {
+    margin-left: 50px; background: none;
+    width: 25px; height: 25px;
+}
+header .right #searchFrm fieldset #searchBtn img {width: 100%;}
+/* header .right #searchFrm fieldset #searchBtn img:: {color: white;} */
+header .right #login {width: 40px; height: 40px;}
+header .right #login img {width: 100%;}
+header .right #cart {width: 40px; height: 40px;}
+header .right #cart img {width: 100%;}
+header .right #nav {width: 40px; height: 40px;}
+header .right #nav img {width: 100%;}
+/*open-nav*/
+header #open_nav {
+    position: fixed; left: 0; top: 0; z-index: 999;
+    width: 100%; height: 100%;
+    background: #f1f1f1; overflow-y: auto;/*웹 브라우저 y축 기준으로 내용이 넘칠경우 스크롤을 표시하고 넘치지 않다면 스크롤을숨긴다*/
+}
+header #open_nav #nav_close {position: absolute; top: 70px; right: 200px; width: 40px; height: 40px;}
+header #open_nav #nav_close img {width: 100%;}
+/*swiper-slide nav_adver*/
+header #open_nav #nav_adver {
+    margin-top:30px; max-width: 670px;
+}
+header #open_nav #nav_adver .swiper-wrapper {}
+header #open_nav #nav_adver .swiper-wrapper .swiper-slide {text-align: center;}
+header #open_nav #nav_adver .swiper-wrapper .swiper-slide a {
+    font-size: 1rem; line-height: 24px; 
+}
+header #open_nav #nav_adver .swiper-wrapper .swiper-slide a:hover {
+    color: #520090; border-bottom:1px solid #520090;
+}
+header #open_nav #nav_adver .swiper-button-prev, 
+header #open_nav #nav_adver .swiper-button-next { width: 24px; height: 24px; top: 22px;}
+header #open_nav #nav_adver .swiper-button-prev {background: url(../images/adver_prev.png) center no-repeat;}
+header #open_nav #nav_adver .swiper-button-next {background: url(../images/adver_next.png) center no-repeat;}
+header #open_nav #nav_adver .swiper-button-prev::after,
+header #open_nav #nav_adver .swiper-button-next::after {display: none;}
+/*open-nav nav*/
+header #open_nav nav {
+    margin-top: 70px; padding: 20px 0;
+    display: flex; flex-flow: column nowrap; align-items: center;
+}
+header #open_nav nav a {
+    font-size: 3.157rem; margin-bottom: 50px; letter-spacing: -0.02em; 
+    font-weight: 500;
+}
+header #open_nav nav a:hover {
+    border-left: 5px solid #7A01D9; border-radius: 100%; padding-left: 30px ; 
+    color: #520090; 
+}
+header #open_nav nav a:last-child {margin-bottom: 0;}
