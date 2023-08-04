@@ -79,7 +79,7 @@ header #open_nav nav {
 }
 header #open_nav nav a {
     font-size: 3.157rem; margin-bottom: 50px; letter-spacing: -0.02em; 
-    font-weight: 500;
+    font-weight: 500; transition: all 0.2s linear;
 }
 header #open_nav nav a:hover {
     border-left: 5px solid #7A01D9; border-radius: 100%; padding-left: 30px ; 
