@@ -13,7 +13,7 @@ html::-o-scrollbar-thumb:hover {background-color: #555;}
 ::-webkit-scrollbar-thumb:hover {background-color: #555;}
 
 header {
-    background: lightblue; margin: 0 auto; height: 100px;
+    margin: 0 auto; height: 100px;
     width: calc(100% - 60px);
     display: flex; flex-flow: row nowrap;
     justify-content: space-between; align-items: center;
@@ -28,7 +28,6 @@ header .right .lang {}
 header .right > * {margin-left: 30px;}
 header .right #searchFrm {margin-left: 30px;}
 header .right #searchFrm fieldset {
-    background: lightgreen;
     display: flex; flex-flow: row nowrap; align-items: center;
     border: 1px solid black; border-radius: 100px; padding: 5px 10px;
 }
