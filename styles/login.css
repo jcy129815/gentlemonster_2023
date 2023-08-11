@@ -4,9 +4,9 @@ main .rap {
     display: flex; flex-flow: column nowrap;align-items: center; margin-top: 30px;
 }
 main .rap .title { width: 800px;
-    display: flex; flex-flow: row nowrap;  margin-bottom: -1px; z-index: 100;
+    display: flex; flex-flow: row nowrap;  margin-bottom: -3px; z-index: 100;
 }
-main .rap .info {border-top: 1px solid #36025d;}
+main .rap .info {border-top: 3px solid #6504af;}
 main .rap .title a {
     display: inline-block;
     font-size: 1.777rem; font-weight: 700;
@@ -14,8 +14,8 @@ main .rap .title a {
 }
 /*클래스*/
 main .rap .title > .active {
-    border: 1px solid #36025d; background: white;
-    border-bottom: 1px solid white;
+    border: 3px solid #6504af; background: white;
+    border-bottom: 1px solid white; border-radius: 10px 10px 0 0;
 }
 main .rap .info_1 {display: block;}
 main .rap .info_1 fieldset {
@@ -45,7 +45,7 @@ main .rap .info_1 fieldset button {
     text-align: center; margin-top: 40px; border-radius: 15px;
 }
 main .rap .info_1 fieldset > .login_nomal {background: black; color: white;}
-main .rap .info_1 fieldset > .login_cacao {background: yellow; border: 1px solid rgb(190, 190, 3);}
+main .rap .info_1 fieldset > .login_cacao {background: #F7E600; border: 1px solid #3A1D1D; color: #3A1D1D;}
 main .rap .info_1 fieldset > .login_apple {background: white; border: 1px solid rgb(194, 194, 194); margin-bottom: 50px;}
 /*회원가입*/
 main .rap .info_2 { margin-top: 40px;}
@@ -54,5 +54,5 @@ main .rap .info_2 button {
     font-size: 1.333rem;font-weight: 500; width: 800px; height: 50px;
     text-align: center; margin-top: 45px; border-radius: 15px;}
 main .rap .info_2 .new_nomal {background: black; color: white;}
-main .rap .info_2 .new_cacao {background: yellow; border: 1px solid rgb(190, 190, 3);}
+main .rap .info_2 .new_cacao {background: #F7E600; border: 1px solid #3A1D1D; color: #3A1D1D;}
 main .rap .info_2 .new_apple {background: white; border: 1px solid rgb(194, 194, 194); margin-bottom: 50px;}

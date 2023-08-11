@@ -1,0 +1,94 @@
+main {}
+/* 1. 슬라이드 */
+main #product_slide {position: relative;}
+main #product_slide .swiper-wrapper {}
+main #product_slide .swiper-wrapper .swiper-slide {
+    /* 공통 슬라이드 */
+    width: 700px; height: 740px; position: relative;
+}
+main #product_slide .swiper-wrapper .swiper-slide .txt {
+    position: relative; top: 500px; padding-left: 50px;
+    /*초기 숨기기(이후 swiper 활용 서서히 나타나고 사라지기 기능 추가)*/
+    /* transform: translateX(50px); */
+    opacity: 0; transition: all 1s;
+}
+main #product_slide .swiper-wrapper .swiper-slide .txt h1 {font-size: 2.3rem; font-weight: 500; line-height: 50px; letter-spacing: -0.02rem;}
+main #product_slide .swiper-wrapper .swiper-slide .txt h1 em {font-size: 2.3rem; font-weight: 700; line-height: 50px; letter-spacing: -0.02rem;}
+main #product_slide .swiper-wrapper .swiper-slide .txt p {font-size: 1.4rem; font-weight: 500; letter-spacing: -0.02rem; margin-top: 20px;}
+main #product_slide .swiper-wrapper .slide1 {background-image: url(../images/model/model01.jpg);}
+main #product_slide .swiper-wrapper .slide2 {background-image: url(../images/model/model02.jpg);}
+main #product_slide .swiper-wrapper .slide3 {background-image: url(../images/model/model03.jpg);}
+main #product_slide .swiper-wrapper .slide4 {background-image: url(../images/model/model04.jpg);}
+main #product_slide .swiper-wrapper .slide5 {background-image: url(../images/model/model05.jpg);}
+main #product_slide .swiper-wrapper .slide6 {background-image: url(../images/model/model06.jpg);}
+/* scrollbar */
+main #product_slide .swiper-scrollbar {
+    background: white; width: 400px;
+    left: 50%; bottom: 20px; transform: translateX(-50%);
+
+}/*스크롤 배경(크기, 위치O)*/
+main #product_slide .swiper-scrollbar-drag {background: black;}/*스크롤 막대(크기X)*/
+/* 2. 카테고리 */
+main #category {
+    width: 1350px; margin:30px auto 30px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+}
+main #category a {
+    width: 170px; height: 170px;
+    display: flex; flex-flow: column nowrap; align-items: center; border-radius: 50%;
+    transition: all 1s;
+}
+main #category a img {width: 100%; transition: all 0.5s; border-radius: 100%; border: 1px solid white; padding: 3px;}
+main #category a:hover img {border: 2px solid #9a9a9a;}
+main #category a:hover span {color:  #000000;}
+main #category a span {margin-top: 15px; font-size: 1.2rem; font-weight: 500; letter-spacing: -0.02rem; transition: all 0.5s; color:#7d7d7d;}
+/**/
+main #product_list {}
+main #product_list .title {
+    margin:0 30px;
+}
+main #product_list .title .top {
+    display: flex; flex-flow: row nowrap; align-items: center; justify-content: space-between;
+    padding: 20px 0; border-bottom: 1px solid black;
+}
+main #product_list .title .top h1 {
+    font-size: 1.777rem; font-weight: 700; letter-spacing: -0.02rem;
+}
+main #product_list .title .top .filter {}
+main #product_list .title .top .filter a {font-size: 1.2rem; letter-spacing: -0.02rem;}
+/**/
+main #product_list .title .btm {
+    display: flex; flex-flow: row nowrap; justify-content: space-between; align-items: center; padding: 20px 0;
+
+}
+main #product_list .title .btm p {font-size: 1.125rem; letter-spacing: -0.02rem;}
+main #product_list .title .btm p em {font-weight: 700;}
+main #product_list .title .btm #product_align {}
+main #product_list .title .btm #product_align option {}
+/**/
+main #product_list .container {
+    margin: 0 30px;
+    display: flex; flex-flow: row nowrap;justify-content: space-between;
+}
+main #product_list .container .item {
+    display: flex; flex-flow: column nowrap; justify-content: start;
+}
+main #product_list .container .item .box {}  
+main #product_list .container .item .box a {display: block;}
+main #product_list .container .item .box .item_img{width: 350px;}
+main #product_list .container .item .box .item_img img {width: 100%;}
+main #product_list .container .item .box .like_img {position: relative;}
+main #product_list .container .item .box .like_img img {position: absolute; top: -395px; left: 315px;}
+/**/
+main #product_list .container .item .txt {margin-top: 10px;}
+main #product_list .container .item .txt h2 {color: #7A01D9; letter-spacing: -0.02rem;}
+main #product_list .container .item .txt .name {font-size: 1.125rem; font-weight: 500; margin: 10px 0; letter-spacing: -0.02rem;}
+main #product_list .container .item .txt .price {font-size: 1.125rem; letter-spacing: -0.02rem;}
+main #product_list .container .item .txt .color {
+    display: flex; margin-top: 10px;
+}
+main #product_list .container .item .txt .color span {display: block; width: 20px; height: 20px; border-radius: 100%;}
+main #product_list .container .item .txt .color .white {background: white; border: 1px solid black;}
+main #product_list .container .item .txt .color .black {background: #000; margin: 0 10px;}
+main #product_list .container .item .txt .color .gray {background: gray;}

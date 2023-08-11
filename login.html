@@ -9,8 +9,12 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/login.css">
+    <!--swiper slide-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </head>
 <body>
+    <?php include("./header.php") ?>
     <!-- header -->
     <main>
         <h1>로그인</h1>
@@ -56,6 +60,7 @@
         </div>
     </main>
     <!-- footer -->
+    <?php include("./footer.php") ?>
     <script>
         const title = document.querySelectorAll('.rap> .title > a')
         const info = document.querySelectorAll('.rap> .info > .info_tab')
@@ -77,5 +82,7 @@
             })  
         })
     </script>
+    <!--header, footer 웹페이지 공통영역 적용js-->
+    <script src="./script/common.js"></script>
 </body>
 </html>
