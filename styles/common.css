@@ -86,17 +86,34 @@ header #open_nav nav a:hover {
 }
 header #open_nav nav a:last-child {margin-bottom: 0;}
 /*footer*/
-footer {}
-footer .u1 {}
-footer .u1 > li {}
-footer .u1 > li > a {}
-footer .u1 > li > .ul2 {}
-footer .u1 > li > .ul2 li {}
-footer .u1 > li > .ul2 li a {}
-footer div {}
+footer {padding: 50px 0 25px;}
+footer .ul1 {display: flex; margin-bottom: 50px;}
+footer .ul1 > li {}
+footer .ul1 > li > a {
+    font-size: 18px; display: block;
+    width: 200px;
+    line-height: 30px;
+    padding: 0 0 0 10px;
+}
+footer .ul1 > li > .ul2 {}
+footer .ul1 > li > .ul2 li {}
+footer .ul1 > li > .ul2 li a {
+    width: 100%; display: block;
+    line-height: 30px;
+    padding: 0 0 0 10px;
+}
+footer div {
+    display: flex;
+    align-items: center; justify-content: space-between;
+    padding: 0 10px;
+}
 footer div h1 {
-    width: 215px;
+    width: 300px;
     height: 60px;
 }
 footer div h1 img {width: 100%;}
-footer div address {}
+footer div address {
+    width: 1000px;
+    letter-spacing: -0.02em;
+    line-height: 25px;
+}
